@@ -27,15 +27,15 @@ public class CalculatorTest {
 		result = cal.calculateBi(Calculator.BiOperatorModes.add, temp);
 		assertEquals(result, expect, DELTA);
 
-		expect -= temp;
+		expect = 0d + temp;
 		result = cal.calculateBi(Calculator.BiOperatorModes.minus, temp);
 		assertEquals(result, expect, DELTA);
 
-		expect *= temp;
+		expect -= temp;
 		result = cal.calculateBi(Calculator.BiOperatorModes.multiply, temp);
 		assertEquals(result, expect, DELTA);
 
-		expect /= temp;
+		expect *= temp;
 		result = cal.calculateBi(Calculator.BiOperatorModes.divide, temp);
 		assertEquals(result, expect, DELTA);
 		
@@ -63,7 +63,7 @@ public class CalculatorTest {
 
 		expect = 4.0d / 3.0d;
 		cal.calculateBi(Calculator.BiOperatorModes.divide, 4.0d);
-		result = cal.calculateEqual(5.0d);
+		result = cal.calculateEqual(3.0d);
 		assertEquals(result, expect, DELTA);
 	}
 
