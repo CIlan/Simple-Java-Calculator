@@ -29,3 +29,5 @@ Achintha Gunasekara: contact@achinthagunasekara.com
 ##LICENSE
 
 Apache License, Version 2.0 or later; See the license.txt file in the "NotePad" folder.
+
+#https://github.com/pH-7/Simple-Java-Calculator.git
